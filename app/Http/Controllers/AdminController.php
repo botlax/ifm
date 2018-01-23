@@ -58,7 +58,7 @@ class AdminController extends Controller
     	$this->validate($request,[
     		'role' => 'required',
     		'name' => 'required',
-            'email' => 'required|email|unique',
+            'email' => 'required|email|unique:admins',
     		'password' => 'required|confirmed|min:6'
     	]);
 
