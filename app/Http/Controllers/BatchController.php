@@ -209,7 +209,7 @@ class BatchController extends Controller
 	        	Excel::load($file, function($reader)use($type) {
 				    $results = $reader->all();
 				    foreach($results as $result){
-					    dd($result->id);
+					    dd($result);
 				    	switch ($type) {
 			                case 'passport':
 			                    $user = User::where('emp_id',intval($result->id))->first();
