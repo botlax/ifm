@@ -136,6 +136,7 @@
 			{!! Form::model($emp,['route' => ['emp-update',$emp->id], 'id' => 'positionForm', 'class' => 'userUpdateForm']) !!}
 	            {!! Form::select('position',['' => '--Select Position--',
                     'Accountant'  =>  'Accountant',
+		    'AC Technician' => 'AC Technician',
                     'Administration Manager'   =>  'Administration Manager',
                     'Assist. Accountant'  =>  'Assist. Accountant',
                     'Assist. Foreman'  =>  'Assist. Foreman',
