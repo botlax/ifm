@@ -40,6 +40,7 @@ Cancelled Employees | {{config('app.name')}}
 				{!! Form::text('q','') !!}
 				{!! Form::select('position',['' => '--Select Position--',
                     'Accountant'  =>  'Accountant',
+		    'AC Technician' => 'AC Technician',
                     'Administration Manager'   =>  'Administration Manager',
                     'Assist. Accountant'  =>  'Assist. Accountant',
                     'Assist. Foreman'  =>  'Assist. Foreman',
