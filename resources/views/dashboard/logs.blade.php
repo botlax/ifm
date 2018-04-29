@@ -29,7 +29,7 @@ Logs | {{config('app.name')}}
 			<ul id="employees">
 			@foreach($logs as $log)
 				<li>
-					<p><i class="fa fa-arrow-right"></i> {{$log->admin()->name}} {{$log->logs}} ({{$log->log_date->format('F d, Y - g:ia')}})</p>
+					<p><i class="fa fa-arrow-right"></i> {{dd($log->admin()->first())}} {{$log->logs}} ({{$log->log_date->format('F d, Y - g:ia')}})</p>
 				</li>
 			@endforeach
 			</ul>
