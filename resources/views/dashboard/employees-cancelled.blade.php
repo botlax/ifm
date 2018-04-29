@@ -212,8 +212,9 @@ Cancelled Employees | {{config('app.name')}}
 						@endif
 						<td class="ph">
 							<a href="{{url('employees/'.$emp->id.'/edit')}}"><i class="fa fa-wrench"></i></a>
-							<a href="#delete-leanmodal" data-id="{{$emp->id}}" class="delete" rel="leanModal" title="delete"><i class="fa fa-remove"></i></a>
-							{!! Form::open(['route' => ['emp-delete',$emp->id],'style' => 'display: none;','id' => 'delete'.$emp->id]) !!}{!! Form::close() !!}
+							<a href="#revive-leanmodal" data-id="{{$emp->id}}" class="revive" rel="leanModal" title="revive"><i class="fa fa-check"></i></a>
+							{!! Form::open(['route' => ['emp-revive',$emp->id],'style' => 'display: none;','id' => 'revive'.$emp->id]) !!}{!! Form::close() !!}
+							<a href="#info-leanmodal" data-id="{{$emp->id}}" class="info" rel="leanModal" title="info"><i class="fa fa-info-circle"></i></a>
 						</td>
 					</tr>
 					<?php $x++; ?>
