@@ -249,6 +249,7 @@ class HomeController extends Controller
         $date = Carbon::today();
 
         $designations = ['Accountant',
+                    'AC Technician',     
                     'Administration Manager',
                     'Assist. Accountant',
                     'Assist. Foreman',
